@@ -36,4 +36,9 @@ class profiles::foreman {
   class{'foreman::plugin::puppetdb':
     address => "https://${facts['fqdn']}:8081/pdb/cmd/v1",
   }
+
+  # install additional tools for maintenance
+  package{['rubygem-foreman_maintain', 'rubygem-foreman_maintain-doc']:
+    ensure => 'present',
+  }
 }
