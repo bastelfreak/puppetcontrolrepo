@@ -5,5 +5,13 @@ class profiles::choriaserver {
       before => Class['mcollective'],
     }
   }
+  include gcc
+  include make
   include mcollective
+
+  Class['make']
+  -> Class['mcollective']
+
+  Class['gcc']
+  -> Class['mcollective']
 }
