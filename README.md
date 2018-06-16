@@ -22,6 +22,8 @@ yum install --assumeyes https://yum.puppetlabs.com/puppet5/puppet5-release-el-7.
 yum install --assumeyes puppet puppetserver
 source /etc/profile.d/puppet-agent.sh
 puppet module install puppet-r10k
+puppet apply -e 'include r10k'
 sed -i 's#remote:.*#remote: https://github.com/bastelfreak/puppetcontrolrepo.git#' /etc/puppetlabs/r10k/r10k.yaml
 r10k deploy environment --puppetfile --verbose
+puppet apply -e 'include roles::puppetserver'
 ```
