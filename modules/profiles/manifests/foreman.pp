@@ -14,9 +14,10 @@ class profiles::foreman {
   # allow nodes to set their own env
   # but still be authoritative for all other nodes
   # https://github.com/joshuabaird/foreman_noenv
-  foreman::plugin{'noenv':
-    package => 'tfm-rubygem-foreman_noenv',
-  }
+  # broken with foreman 1.17.1
+  #foreman::plugin{'noenv':
+  #  package => 'tfm-rubygem-foreman_noenv',
+  #}
 
   # assign a default host group
   # https://github.com/theforeman/foreman_default_hostgroup
