@@ -32,6 +32,9 @@ mod 'puppet-ferm', '1.2.0'
 mod 'puppet-selinux', '1.5.2'
 mod 'herculesteam-augeasproviders_sysctl', '2.2.0'
 mod 'herculesteam-augeasproviders_core', '2.1.4'
+mod 'puppet-prometheus', '6.0.1'
+mod 'KyleAnderson-consul', '3.3.0'
+mod 'puppet-grafana', '4.2.0'
 
 # all the choria modules
 mod 'choria-mcollective_util_actionpolicy', '3.0.0'
