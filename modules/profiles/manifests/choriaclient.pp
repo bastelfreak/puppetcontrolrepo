@@ -1,7 +1,6 @@
-# this class configures a choria agent
+# this class configures a choria client
 # you want to put this on a single node, maybe your puppetserver
-class profiles::choria {
-  contain mcollective
+class profiles::choriaclient {
   sysctl {'net.core.somaxconn':
     ensure  => present,
     value   => '4092',
