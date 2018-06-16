@@ -6,6 +6,7 @@ class roles::puppetserver {
   include profiles::puppetserverproxy
   include profiles::puppetdb
   include profiles::foreman
+  include profiles::choria
   Class['profiles::Puppetserver']
   -> Class['Profiles::Puppetdb']
   -> Class['Profiles::Foreman']
