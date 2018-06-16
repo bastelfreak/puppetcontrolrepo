@@ -11,16 +11,4 @@ class profiles::puppetserver {
     server_puppetdb_host        => $facts['fqdn'],
     server_foreman_url          => "https://${facts['fqdn']}",
   }
-  class{'foreman_proxy':
-    puppet           => true,
-    puppetca         => true,
-    tftp             => false,
-    dhcp             => false,
-    dns              => false,
-    bmc              => false,
-    realm            => false,
-    foreman_base_url => "https://${facts['fqdn']}",
-    trusted_hosts    => ['puppet', $facts['fqdn']],
-  }
-
 }
