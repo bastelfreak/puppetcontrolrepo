@@ -28,6 +28,7 @@ mod 'theforeman-dhcp', '4.1.1'
 mod 'theforeman-dns', '5.2.0'
 mod 'theforeman-tftp', '4.1.0'
 mod 'puppetlabs-xinetd', '3.0.0'
+mod 'puppet-ferm', '1.2.0'
 
 # all the choria modules
 mod 'choria-mcollective_util_actionpolicy', '3.0.0'
