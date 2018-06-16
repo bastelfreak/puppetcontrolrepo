@@ -30,6 +30,8 @@ mod 'theforeman-tftp', '4.1.0'
 mod 'puppetlabs-xinetd', '3.0.0'
 mod 'puppet-ferm', '1.2.0'
 mod 'puppet-selinux', '1.5.2'
+mod 'herculesteam-augeasproviders_sysctl', '2.2.0'
+mod 'herculesteam-augeasproviders_core', '2.1.4'
 
 # all the choria modules
 mod 'choria-mcollective_util_actionpolicy', '3.0.0'
