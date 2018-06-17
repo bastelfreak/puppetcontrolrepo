@@ -13,4 +13,13 @@ class profiles::puppetserver {
     server_common_modules_path  => '', # dont create /etc/puppetlabs/code/environments/common, also purges basemodulepath from /etc/puppetlabs/puppet/puppet.conf
     server_environments         => [] # dont create /etc/puppetlabs/code/environments/{development,production}
   }
+
+  include ferm
+
+  ferm::rule{'allow_puppet':
+    chain  => 'INPUT',
+    policy => 'ACCEPT',
+    proto  => 'tcp',
+    dport  => '8140',
+  }
 }

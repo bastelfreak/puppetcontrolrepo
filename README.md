@@ -4,6 +4,8 @@ This guide will provision an all in one stack on CentOS 7. It is based on the
 new [Hetzner Online](https://www.hetzner.de/cloud) cloud instances.
 
 * [Setup](#setup)
+    * [Basics Profile](#basics-profile)
+    * [GitLab Profile](#gitlab-profile)
 * [Provision script](#provision-script)
 * [Constraints](#constraints)
 * [Related issues and pull requests](#related-issues-and-pull-requests)
@@ -14,6 +16,7 @@ new [Hetzner Online](https://www.hetzner.de/cloud) cloud instances.
 
 We provide profiles for the following services:
 
+* [Basics](modules/profiles/manifests/basics.pp)
 * [Puppetserver](modules/profiles/manifests/puppetserver.pp)
     * [Foreman Proxy](modules/profiles/manifests/foremanproxy.pp)
 * [PuppetDB](modules/profiles/manifests/puppetdb.pp)
@@ -21,6 +24,23 @@ We provide profiles for the following services:
 * [Choria Server](modules/profiles/manifests/choriaserver.pp)
 * [Choria Client](modukes/profiles/manifests/choriaclient.pp)
 * [GitLab](modules/profiles/manifestsgitlab.pp)
+
+
+### `basics` Profile
+
+This profile handles common utilities that are shared across every potential
+node. Currently this is the firewall handling. The `ferm` class is included
+with needed parameters. They are set in hiera as well, but that is a bit tricky
+if you run `puppet apply`. All other profiles, that require open ports, include
+the ferm class as well. You need to ensure to evaluate the `basics` class
+before any other class.
+
+ToDo: Implement handling of common packages
+
+### `gitlab` Profile
+
+Everybody wants a central collaboration platform, with chat software, git
+hosting, issue handling and CI/CD stack, right? GitLab provides all of that!
 
 ## Provision script
 
