@@ -47,3 +47,4 @@ During the work on this project we run into several issues. They are documented 
 * https://github.com/choria-io/puppet-mcollective/pull/184
 * https://github.com/joshuabaird/foreman_noenv/issues/19
 * https://github.com/teemow/prometheus-borg-exporter/pull/6
+* https://github.com/puppetlabs/puppetlabs-gcc/pull/17
