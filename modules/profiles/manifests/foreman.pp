@@ -38,6 +38,7 @@ class profiles::foreman {
   }
 
   # install additional tools for maintenance
+  # depends on foreman, because foreman provides the repos
   package{['rubygem-foreman_maintain', 'rubygem-foreman_maintain-doc']:
     ensure  => 'present',
     require => Class['foreman'],
