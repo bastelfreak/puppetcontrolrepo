@@ -1,0 +1,34 @@
+fixtures:
+  repositories:
+    augeasproviders_sysctl: "https://github.com/hercules-team/augeasproviders_sysctl.git"
+    augeasproviders_core: "https://github.com/hercules-team/augeasproviders_core.git"
+    gcc:
+      repo: "https://github.com/bastelfreak/puppetlabs-gcc.git"
+      branch: "arch"
+    make: "https://github.com/voxpupuli/puppet-make.git"
+    mcollective: "https://github.com/choria-io/puppet-mcollective.git"
+    stdlib: "https://github.com/puppetlabs/puppetlabs-stdlib.git"
+    #foreman: "https://github.com/theforeman/puppet-foreman.git"
+    foreman:
+      repo: "https://github.com/bastelfreak/puppet-foreman.git"
+      branch: "arch"
+    puppetdb: "https://github.com/puppetlabs/puppetlabs-puppetdb.git"
+    stdlib: "https://github.com/puppetlabs/puppetlabs-stdlib.git"
+    postgresql: "https://github.com/puppetlabs/puppetlabs-postgresql.git"
+    apache: "https://github.com/puppetlabs/puppetlabs-apache.git"
+    extlib: "https://github.com/voxpupuli/puppet-extlib.git"
+    concat: "https://github.com/puppetlabs/puppetlabs-concat.git"
+    apt: "https://github.com/puppetlabs/puppetlabs-apt.git"
+    inifile: "https://github.com/puppetlabs/puppetlabs-inifile.git"
+    puppet: "https://github.com/theforeman/puppet-puppet.git"
+    foreman_proxy: "https://github.com/theforeman/puppet-foreman_proxy.git"
+    datacat: "https://github.com/richardc/puppet-datacat.git"
+  forge_modules:
+    mcollective_choria: "choria/mcollective_choria"
+    mcollective_agent_puppet: "choria/mcollective_agent_puppet"
+    mcollective_agent_package: "choria/mcollective_agent_package"
+    mcollective_agent_service: "choria/mcollective_agent_service"
+    mcollective_agent_filemgr: "choria/mcollective_agent_filemgr"
+    mcollective_util_actionpolicy: "choria/mcollective_util_actionpolicy"
+  symlinks:
+    profiles: "#{source_dir}"

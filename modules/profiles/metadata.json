@@ -1,9 +1,42 @@
 {
   "name": "bastelfreak-profiles",
   "version": "0.1.0",
-  "summary": "Installing and maintaining Zabbix. Will install server, proxy, java-gateway and agent on RedHat/Debian/Ubuntu (Incl. exported resources).",
-  "author": "Vox Pupuli",
+  "summary": "a list of profiles for a complete puppet demo/lab environment",
+  "author": "Tim Meusel",
   "dependencies": [
+    {
+      "name": "herculesteam/augeasproviders_sysctl",
+      "version_requirement": ">= 2.2.0 < 3.0.0"
+    },
+    {
+      "name": "puppetlabs/gcc",
+      "version_requirement": ">= 0.3.0 < 2.0.0"
+    },
+    {
+      "name": "puppet/make",
+      "version_requirement": ">= 2.1.0 < 3.0.0"
+    },
+    {
+      "name": "choria/mcollective",
+      "version_requirement": ">= 0.6.0 < 2.0.0"
+    },
+    {
+      "name": "theforeman/foreman",
+      "version_requirement": ">= 9.1.0 < 10.0.0"
+    },
+    {
+      "name": "puppetlabs/puppetdb",
+      "version_requirement": ">= 6.0.2 < 7.0.0"
+    },
+    {
+      "name": "theforeman/puppet",
+      "version_requirement": ">= 9.0.1 < 10.0.0"
+    },
+    {
+      "name": "theforeman/foreman_proxy",
+      "version_requirement": ">= 7.2.1 < 8.0.0"
+    },
+
     {
       "name": "puppetlabs/postgresql",
       "version_requirement": ">= 4.4.2 < 6.0.0"
