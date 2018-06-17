@@ -4,7 +4,12 @@ mod 'puppetlabs-concat', '4.2.1'
 mod 'puppetlabs-vcsrepo', '2.3.0'
 mod 'puppetlabs-stdlib', '4.25.1'
 mod 'puppetlabs-ruby', '1.0.0'
-mod 'puppetlabs-puppetdb', '6.0.2'
+# the upstream version is pretty old and throws warnings
+#mod 'puppetlabs-puppetdb', '6.0.2'
+mod 'puppetlabs-puppetdb',
+  :git => 'https://github.com/puppetlabs/puppetlabs-puppetdb',
+  :commit => '78b9df2f20d623ad59259ad8b507cb322484473a'
+
 mod 'puppetlabs-postgresql', '5.4.0'
 mod 'puppetlabs-inifile', '2.2.2'
 mod 'puppetlabs-git', '0.5.0'
