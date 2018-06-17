@@ -36,6 +36,14 @@
       "name": "theforeman/foreman_proxy",
       "version_requirement": ">= 7.2.1 < 8.0.0"
     },
+    {
+      "name": "puppet/gitlab",
+      "version_requirement": ">= 2.1.0 < 3.0.0"
+    },
+    {
+      "name": "puppet/ferm",
+      "version_requirement": ">= 1.2.0 < 2.0.0"
+    },
 
     {
       "name": "puppetlabs/postgresql",
