@@ -3,6 +3,24 @@
 This guide will provision an all in one stack on CentOS 7. It is based on the
 new [Hetzner Online](https://www.hetzner.de/cloud) cloud instances.
 
+* [Setup](#setup)
+* [Provision script](#provision-script)
+* [Constraints](#constraints)
+* [Related issues and pull requests](#related-issues-and-pull-requests)
+
+---
+
+## Setup
+
+We provide profiles for the following services:
+
+* [Puppetserver](modules/profiles/manifests/puppetserver.pp)
+    * [Foreman Proxy](modules/profiles/manifests/foremanproxy.pp)
+* [PuppetDB](modules/profiles/manifests/puppetdb.pp)
+* [Foreman](modules/profiles/manifests/foreman.pp)
+* [Choria Server](modules/profiles/manifests/choriaserver.pp)
+* [Choria Client](modukes/profiles/manifests/choriaclient.pp)
+
 ## Provision script
 
 First of we need to fix selinux:
