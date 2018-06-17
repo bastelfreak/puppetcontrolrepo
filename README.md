@@ -28,3 +28,10 @@ sed -i 's#remote:.*#remote: https://github.com/bastelfreak/puppetcontrolrepo.git
 r10k deploy environment --puppetfile --verbose
 puppet apply -e 'include roles::puppetserver'
 ```
+
+## Constraints
+
+The FQDN of the puppserver node should be `puppet.local`. The certificate is
+valid for `puppet` and `puppet.local`. We create an entry in `/etc/hosts` for
+each client, so it can reach the server under that FQDN and we don't need to
+deal with DNS.
