@@ -1,6 +1,6 @@
 class profiles::foreman {
   class{'foreman':
-    db_manage       => true,
+    db_manage => true,
   }
 
   # run async tasks
@@ -39,6 +39,7 @@ class profiles::foreman {
 
   # install additional tools for maintenance
   package{['rubygem-foreman_maintain', 'rubygem-foreman_maintain-doc']:
-    ensure => 'present',
+    ensure  => 'present',
+    require => Class['foreman'],
   }
 }

@@ -8,8 +8,9 @@ class roles::puppetserver {
   include profiles::foreman
   include profiles::choriaclient
   include profiles::choriaserver
-  Class['profiles::Puppetserver']
-  -> Class['Profiles::Puppetdb']
+  #Class['profiles::Puppetserver']
+  Class['Profiles::Puppetdb']
+  -> Class['profiles::Puppetserver']
   -> Class['Profiles::Foreman']
   -> Class['Profiles::Puppetserverproxy']
 }
