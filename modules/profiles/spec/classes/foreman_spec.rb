@@ -18,6 +18,7 @@ describe 'profiles::foreman' do
         it { is_expected.to contain_foreman__plugin('column_view') }
         it { is_expected.to contain_package('rubygem-foreman_maintain-doc') }
         it { is_expected.to contain_package('rubygem-foreman_maintain') }
+        it { is_expected.to contain_ferm__rule('allow_http') }
       end
     end
   end
