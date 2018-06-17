@@ -48,3 +48,6 @@ During the work on this project we run into several issues. They are documented 
 * https://github.com/joshuabaird/foreman_noenv/issues/19
 * https://github.com/teemow/prometheus-borg-exporter/pull/6
 * https://github.com/puppetlabs/puppetlabs-gcc/pull/17
+* https://tickets.puppetlabs.com/browse/MODULES-7317
+* https://tickets.puppetlabs.com/browse/MODULES-4124
+* https://tickets.puppetlabs.com/browse/MODULES-4266
