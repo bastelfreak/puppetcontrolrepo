@@ -20,6 +20,7 @@ We provide profiles for the following services:
 * [Foreman](modules/profiles/manifests/foreman.pp)
 * [Choria Server](modules/profiles/manifests/choriaserver.pp)
 * [Choria Client](modukes/profiles/manifests/choriaclient.pp)
+* [GitLab](modules/profiles/manifestsgitlab.pp)
 
 ## Provision script
 

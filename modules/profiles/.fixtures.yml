@@ -23,6 +23,8 @@ fixtures:
     puppet: "https://github.com/theforeman/puppet-puppet.git"
     foreman_proxy: "https://github.com/theforeman/puppet-foreman_proxy.git"
     datacat: "https://github.com/richardc/puppet-datacat.git"
+    gitlab: "https://github.com/voxpupuli/puppet-gitlab.git"
+    ferm: "https://github.com/voxpupuli/puppet-ferm.git"
   forge_modules:
     mcollective_choria: "choria/mcollective_choria"
     mcollective_agent_puppet: "choria/mcollective_agent_puppet"
