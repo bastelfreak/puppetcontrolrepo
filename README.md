@@ -35,3 +35,15 @@ The FQDN of the puppserver node should be `puppet.local`. The certificate is
 valid for `puppet` and `puppet.local`. We create an entry in `/etc/hosts` for
 each client, so it can reach the server under that FQDN and we don't need to
 deal with DNS.
+
+## Related issues and pull requests
+
+During the work on this project we run into several issues. They are documented below
+
+* https://github.com/puppetlabs/puppetlabs-puppetdb/pull/251
+* https://github.com/theforeman/puppet-puppet/pull/600
+* https://github.com/voxpupuli/puppet-make/pull/29
+* https://github.com/choria-io/mcollective-choria/pull/514
+* https://github.com/choria-io/puppet-mcollective/pull/184
+* https://github.com/joshuabaird/foreman_noenv/issues/19
+* https://github.com/teemow/prometheus-borg-exporter/pull/6
