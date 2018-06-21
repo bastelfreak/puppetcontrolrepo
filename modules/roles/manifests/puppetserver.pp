@@ -10,6 +10,7 @@ class roles::puppetserver {
   include profiles::foreman
   include profiles::choriaclient
   include profiles::choriaserver
+  include profiles::node_exporter
   Class['Profiles::Basics']
   -> Class['Profiles::Puppetdb']
   -> Class['profiles::Puppetserver']
