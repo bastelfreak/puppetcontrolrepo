@@ -8,4 +8,12 @@ class profiles::node_exporter {
     extra_options     => '--collector.textfile.directory=/var/lib/prometheus-dropzone --web.listen-address 127.0.0.1:9100',
     install_method    => 'url',
   }
+
+  # that selboolean allows nginx to talk to tcp port 9100
+  if $facts['os']['selinux']['enabled'] {
+    selboolean{'httpd_enable_ftp_server':
+      value      => 'on',
+      persistent => true,
+    }
+  }
 }
