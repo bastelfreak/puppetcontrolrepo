@@ -39,7 +39,7 @@ mod 'herculesteam-augeasproviders_sysctl', '2.2.0'
 mod 'herculesteam-augeasproviders_core', '2.1.4'
 mod 'puppet-prometheus', '6.0.4'
 mod 'KyleAnderson-consul', '3.3.0'
-mod 'puppet-grafana', '4.2.0'
+mod 'puppet-grafana', '4.4.0'
 mod 'puppet-gitlab', '2.1.0'
 mod 'puppetlabs-powershell', '2.1.5'
 
