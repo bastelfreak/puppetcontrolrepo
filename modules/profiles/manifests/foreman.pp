@@ -2,7 +2,7 @@ class profiles::foreman {
   class{'foreman':
     db_manage           => true,
     configure_epel_repo => false,
-    passenger_interface => $facts['network_primary_interface'],
+    passenger_interface => $facts['networking']['ip'],
   }
 
   # run async tasks
