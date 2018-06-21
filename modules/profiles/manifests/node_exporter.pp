@@ -9,6 +9,9 @@ class profiles::node_exporter {
     install_method    => 'url',
   }
 
+  # provide endpoint to monitor node_exporter through ssl
+  include nginx
+
   # that selboolean allows nginx to talk to tcp port 9100
   if $facts['os']['selinux']['enabled'] {
     selboolean{'httpd_enable_ftp_server':
