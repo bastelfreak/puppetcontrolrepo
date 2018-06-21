@@ -40,3 +40,4 @@ mcollective::plugin_classes:
   - mcollective_agent_nettest
 ferm::manage_service: true
 ferm::manage_configfile: true
+nginx::purge_passenger_repo: false
