@@ -22,4 +22,19 @@ class profiles::puppetserver {
     proto  => 'tcp',
     dport  => '8140',
   }
+
+   # provide endpoint to monitor nginx
+  nginx::resource::server{'127.0.0.1':
+    listen_ip => '127.0.0.1',
+  }
+  nginx::resource::location{'nginx_status':
+    server              => '127.0.0.1',
+    location            => '/nginx_status',
+    stub_status         => true,
+    index_files         => [],
+    location_allow      => ['127.0.0.1'],
+    location_deny       => ['all'],
+    location_cfg_append => {'access_log' => 'off'},
+    ssl                 => false,
+  }
 }
