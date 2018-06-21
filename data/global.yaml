@@ -13,9 +13,9 @@ mcollective_choria::config:
 mcollective::site_policies:
 - action: "allow"
   callers: "choria=mco.mcollective"
-  actions: "*" 
-  facts: "*" 
-  classes: "*" 
+  actions: "*"
+  facts: "*"
+  classes: "*"
 mcollective_agent_process::gem_dependencies:
   sys-proctable: 1.2.0
 mcollective_agent_nettest::gem_dependencies:
