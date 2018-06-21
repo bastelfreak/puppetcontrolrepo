@@ -43,6 +43,18 @@
     {
       "name": "puppet/ferm",
       "version_requirement": ">= 1.2.0 < 2.0.0"
+    },
+    {
+      "name": "puppet/network",
+      "version_requirement": ">= 0.8.0 < 2.0.0"
+    },
+    {
+      "name": "puppet/nginx",
+      "version_requirement": ">= 0.12.0 < 2.0.0"
+    },
+    {
+      "name": "puppet/prometheus",
+      "version_requirement": ">= 6.0.4 < 7.0.0"
     }
   ],
   "source": "https://github.com/voxpupuli/puppet-zabbix.git",

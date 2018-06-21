@@ -26,7 +26,8 @@ class profiles::puppetserver {
     dport  => '8140',
   }
 
-   # provide endpoint to monitor nginx
+  # provide endpoint to monitor nginx
+  include nginx
   nginx::resource::server{'127.0.0.1':
     listen_ip => '127.0.0.1',
   }

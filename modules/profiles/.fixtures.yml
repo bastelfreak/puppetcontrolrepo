@@ -25,6 +25,8 @@ fixtures:
     datacat: "https://github.com/richardc/puppet-datacat.git"
     gitlab: "https://github.com/voxpupuli/puppet-gitlab.git"
     ferm: "https://github.com/voxpupuli/puppet-ferm.git"
+    nginx: "https://github.com/voxpupuli/puppet-nginx.git"
+    prometheus: "https://github.com/voxpupuli/puppet-prometheus.git"
   forge_modules:
     mcollective_choria: "choria/mcollective_choria"
     mcollective_agent_puppet: "choria/mcollective_agent_puppet"
