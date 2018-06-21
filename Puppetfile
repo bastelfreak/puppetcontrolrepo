@@ -10,7 +10,7 @@ mod 'puppetlabs-puppetdb',
   :git => 'https://github.com/puppetlabs/puppetlabs-puppetdb',
   :commit => '78b9df2f20d623ad59259ad8b507cb322484473a'
 
-mod 'puppetlabs-postgresql', '5.4.0'
+mod 'puppetlabs-postgresql', '5.6.0'
 mod 'puppetlabs-inifile', '2.2.2'
 mod 'puppetlabs-git', '0.5.0'
 mod 'puppetlabs-gcc', '0.3.0'
