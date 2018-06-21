@@ -41,6 +41,7 @@ mod 'puppet-prometheus', '6.0.1'
 mod 'KyleAnderson-consul', '3.3.0'
 mod 'puppet-grafana', '4.2.0'
 mod 'puppet-gitlab', '2.1.0'
+mod 'puppetlabs-powershell', '2.1.5'
 
 # all the choria modules
 mod 'choria-mcollective_util_actionpolicy', '3.0.0'
