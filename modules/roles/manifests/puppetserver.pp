@@ -10,7 +10,7 @@ class roles::puppetserver {
   include profiles::foreman
   include profiles::choriaclient
   include profiles::choriaserver
-  Clas['Profiles::Basics']
+  Class['Profiles::Basics']
   -> Class['Profiles::Puppetdb']
   -> Class['profiles::Puppetserver']
   -> Class['Profiles::Foreman']
