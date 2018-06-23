@@ -37,4 +37,10 @@ class profiles::basics {
     noop    => false,
   }
   # lint:endignore
+
+  # install mandatory packages
+  # unzip is needed for the archive resource
+  package{'unzip':
+    ensure => 'present',
+  }
 }
