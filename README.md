@@ -81,6 +81,7 @@ During the work on this project we run into several issues. They are documented 
 
 * https://github.com/puppetlabs/puppetlabs-puppetdb/pull/251
 * https://github.com/theforeman/puppet-puppet/pull/600
+* https://github.com/theforeman/puppet-foreman/issues/649
 * https://github.com/voxpupuli/puppet-make/pull/29
 * https://github.com/choria-io/mcollective-choria/pull/514
 * https://github.com/choria-io/puppet-mcollective/pull/184
