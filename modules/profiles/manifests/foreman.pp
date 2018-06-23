@@ -46,6 +46,14 @@ class profiles::foreman {
     require => Class['foreman'],
   }
 
+  # add memcached
+  class{'memcached':
+    max_memory => 1024, # MB
+  }
+  -> class{'foreman::plugin::memcache':
+    hosts => ['127.0.0.1'],
+  }
+
   include ferm
 
   include profiles::firewall_http

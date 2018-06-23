@@ -44,6 +44,7 @@ mod 'puppet-gitlab', '2.1.0'
 mod 'puppetlabs-powershell', '2.1.5'
 mod 'puppet-network', '0.9.0'
 mod 'puppet-r10k', '6.5.1'
+mod 'saz-memcached', '3.1.0'
 
 # all the choria modules
 mod 'choria-mcollective_util_actionpolicy', '3.0.0'
