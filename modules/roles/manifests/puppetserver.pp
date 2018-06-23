@@ -12,6 +12,7 @@ class roles::puppetserver {
   include profiles::choriaserver
   include profiles::node_exporter
   include profiles::consulserver
+  include profiles::prometheus
   Class['Profiles::Basics']
   -> Class['Profiles::Puppetdb']
   -> Class['profiles::Puppetserver']
@@ -20,4 +21,5 @@ class roles::puppetserver {
 
   Class['Profiles::Basics']
   -> Class['Profiles::Consulserver']
+  -> Class['Profiles::Prometheus']
 }
