@@ -57,4 +57,11 @@ class profiles::puppetserver {
     },
     manage_modulepath => false,
   }
+
+  # add ourself with the public it to the hosts file
+  host{'host.local.ip':
+    name    => 'puppet.local',
+    ip      => $facts['networking']['ip6'],
+    comment => 'MANAGED BY PUPPET',
+  }
 }
