@@ -27,6 +27,7 @@ fixtures:
     ferm: "https://github.com/voxpupuli/puppet-ferm.git"
     nginx: "https://github.com/voxpupuli/puppet-nginx.git"
     prometheus: "https://github.com/voxpupuli/puppet-prometheus.git"
+    r10k: "https://github.com/voxpupuli/puppet-r10k.git"
   forge_modules:
     mcollective_choria: "choria/mcollective_choria"
     mcollective_agent_puppet: "choria/mcollective_agent_puppet"

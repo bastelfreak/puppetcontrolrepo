@@ -45,4 +45,16 @@ class profiles::puppetserver {
   class{'prometheus::graphite_exporter':
     options => '-web.listen-address localhost:9108',
   }
+
+  class { 'r10k':
+    version           => '2.6.2',
+    sources           => {
+      'puppet' => {
+        'remote'  => 'https://github.com/bastelfreak/puppetcontrolrepo.git',
+        'basedir' => $::settings::environmentpath,
+        'prefix'  => false,
+      },
+    },
+    manage_modulepath => false,
+  }
 }

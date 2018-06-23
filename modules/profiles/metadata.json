@@ -55,6 +55,10 @@
     {
       "name": "puppet/prometheus",
       "version_requirement": ">= 6.0.4 < 7.0.0"
+    },
+    {
+      "name": "puppet/r10k",
+      "version_requirement": ">= 6.5.1 < 7.0.0"
     }
   ],
   "source": "https://github.com/voxpupuli/puppet-zabbix.git",
