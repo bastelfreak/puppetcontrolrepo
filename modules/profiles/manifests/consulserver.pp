@@ -1,6 +1,7 @@
 # this is supposed to be used once, to build a "single node cluster"
 class profiles::consulserver {
   class{'consul':
+    version        => '1.1.0',
     pretty_config  => true,
     enable_beta_ui => true,
     config_hash    => {
