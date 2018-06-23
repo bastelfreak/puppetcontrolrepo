@@ -63,6 +63,10 @@
     {
       "name": "saz/memcached",
       "version_requirement": ">= 3.1.0 < 4.0.0"
+    },
+    {
+      "name": "KyleAnderson/consul",
+      "version_requirement": ">= 3.3.0 < 4.0.0"
     }
   ],
   "source": "https://github.com/voxpupuli/puppet-zabbix.git",

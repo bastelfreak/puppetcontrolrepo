@@ -29,6 +29,7 @@ fixtures:
     prometheus: "https://github.com/voxpupuli/puppet-prometheus.git"
     r10k: "https://github.com/voxpupuli/puppet-r10k.git"
     memcached: "https://github.com/saz/puppet-memcached.git"
+    consul: "https://github.com/solarkennedy/puppet-consul.git"
   forge_modules:
     mcollective_choria: "choria/mcollective_choria"
     mcollective_agent_puppet: "choria/mcollective_agent_puppet"
