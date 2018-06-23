@@ -59,9 +59,19 @@ class profiles::puppetserver {
   }
 
   # add ourself with the public it to the hosts file
-  host{'host.local.ip':
-    name    => 'puppet.local',
-    ip      => $facts['networking']['ip6'],
-    comment => 'MANAGED BY PUPPET',
+  # we can't use the host resource, it can't handle dualstack
+  # also it would purge our entries that link the link-local addresses to our FQDN :(
+  #host{'host.local.ip':
+  #  name    => 'puppet.local',
+  #  ip      => $facts['networking']['ip6'],
+  #  comment => 'MANAGED BY PUPPET',
+  #}
+  file_line{'hostlegacyip':
+    path => '/etc/hosts',
+    line => "159.69.31.103 puppet.local # MANAGED BY PUPPET\n",
+  }
+  file_line{'hostip':
+    path => '/etc/hosts',
+    line => "2a01:4f8:1c1c:155b::1 puppet.local # MANAGED BY PUPPET\n",
   }
 }
