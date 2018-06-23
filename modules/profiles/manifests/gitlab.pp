@@ -4,10 +4,6 @@ class profiles::gitlab {
 
   include ferm
 
-  ferm::rule{'allow_http_https':
-    chain  => 'INPUT',
-    policy => 'ACCEPT',
-    proto  => 'tcp',
-    dport  => '(80 443)',
-  }
+  include profiles::firewall_http
+  include profiles::firewall_https
 }
