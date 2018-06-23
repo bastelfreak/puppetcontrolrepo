@@ -104,3 +104,12 @@ During the work on this project we run into several issues. They are documented 
 * https://tickets.puppetlabs.com/browse/MODULES-7317
 * https://tickets.puppetlabs.com/browse/MODULES-4124
 * https://tickets.puppetlabs.com/browse/MODULES-4266
+
+## ToDo
+
+* disable password authentication via ssh
+* connect exporter <-> consul <-> prometheus -> grafana
+* deploy katello
+* Do we want a CI pipeline?
+* Deploy puppet\_webhook
+* deploy lldpd?
