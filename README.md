@@ -51,6 +51,9 @@ password for the admin account can be retrieved with:
 awk '{print $2; exit}' /opt/puppetlabs/puppet/cache/foreman_cache_data/admin_password
 ```
 
+Just because we can: We deploy a [Memcached](https://memcached.org/) instance
+as a cache for our Foreman.
+
 ## Provision script
 
 First of we need to fix selinux:
