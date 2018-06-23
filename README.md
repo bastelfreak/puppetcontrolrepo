@@ -42,6 +42,15 @@ ToDo: Implement handling of common packages
 Everybody wants a central collaboration platform, with chat software, git
 hosting, issue handling and CI/CD stack, right? GitLab provides all of that!
 
+### `foreman` Profile
+
+Installs [Foreman](https://theforeman.org/) with postgresql database. The
+password for the admin account can be retrieved with:
+
+```sh
+awk '{print $2; exit}' /opt/puppetlabs/puppet/cache/foreman_cache_data/admin_password
+```
+
 ## Provision script
 
 First of we need to fix selinux:
@@ -66,6 +75,7 @@ puppet apply -e 'include r10k'
 sed -i 's#remote:.*#remote: https://github.com/bastelfreak/puppetcontrolrepo.git#' /etc/puppetlabs/r10k/r10k.yaml
 r10k deploy environment --puppetfile --verbose
 puppet apply -e 'include roles::puppetserver'
+puppet agent -t --server puppet.local
 ```
 
 ## Constraints
