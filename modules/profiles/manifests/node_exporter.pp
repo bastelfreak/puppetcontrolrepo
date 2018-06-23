@@ -57,6 +57,24 @@ class profiles::node_exporter {
     source => '/etc/puppetlabs/puppet/ssl/certs/ca.pem',
     notify => Nginx::Resource::Server['node_exporter'],
   }
+  nginx::resource::server {'node_exporter':
+    listen_ip         => $facts['networking']['ip'],
+    ipv6_listen_ip    => $facts['networking']['ip6'],
+    ipv6_enable       => true,
+    server_name       => [$trusted['certname']],
+    listen_port       => 9100,
+    ssl_port          => 9100,
+    proxy             => 'http://localhost:9100',
+    ssl               => true,
+    ssl_redirect      => false,
+    ssl_key           => "/etc/nginx/node_exporter_key_${trusted['certname']}.pem",
+    ssl_cert          => "/etc/nginx/node_exporter_cert_${trusted['certname']}.pem",
+    ssl_crl           => '/etc/nginx/node_exporter_puppet_crl.pem',
+    ssl_client_cert   => '/etc/nginx/node_exporter_puppet_ca.pem',
+    ssl_protocols     => $ssl_protocols,
+    ssl_verify_client => 'on',
+    ssl_cache         => 'shared:SSL:384m',
+  }
 
   # that selboolean allows nginx to talk to tcp port 9100
   if $facts['os']['selinux']['enabled'] {
