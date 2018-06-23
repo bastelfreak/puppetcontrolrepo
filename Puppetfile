@@ -38,14 +38,16 @@ mod 'puppet-selinux', '1.5.2'
 mod 'herculesteam-augeasproviders_sysctl', '2.2.0'
 mod 'herculesteam-augeasproviders_core', '2.1.4'
 mod 'puppet-prometheus', '6.0.5'
-mod 'KyleAnderson-consul', '3.3.0'
 mod 'puppet-grafana', '4.4.0'
 mod 'puppet-gitlab', '2.1.0'
 mod 'puppetlabs-powershell', '2.1.5'
 mod 'puppet-network', '0.9.0'
 mod 'puppet-r10k', '6.5.1'
 mod 'saz-memcached', '3.1.0'
-mod 'KyleAnderson-consul', '3.3.0'
+#mod 'KyleAnderson-consul', '3.3.0'
+mod 'KyleAnderson-consul',
+  :git => 'https://github.com/solarkennedy/puppet-consul.git',
+  :commit => 'c579a049c2cf38364602940e7030e92eaf8814e0'
 
 # all the choria modules
 mod 'choria-mcollective_util_actionpolicy', '3.0.0'
