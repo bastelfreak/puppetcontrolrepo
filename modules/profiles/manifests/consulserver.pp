@@ -5,6 +5,7 @@ class profiles::consulserver {
     pretty_config  => true,
     enable_beta_ui => true,
     config_hash    => {
+      'bind_addr'            => $facts['networking']['ip6'],
       'bootstrap_expect'     => 1,
       'data_dir'             => '/opt/consul',
       'datacenter'           => 'NBG',
