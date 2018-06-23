@@ -43,4 +43,12 @@ class profiles::basics {
   package{'unzip':
     ensure => 'present',
   }
+
+  # collect the /etc/hosts entries from our puppetserver
+  # Just for the assumption that we've got multiple nodes
+  # This is DNS like before it was DNS!
+  # We don't need to import it on our puppetserver
+  if ($facts['fqdn'] != 'puppet.local') {
+    File_line <<| tag == 'puppetserver' |>>
+  }
 }
