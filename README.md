@@ -113,3 +113,4 @@ During the work on this project we run into several issues. They are documented 
 * Do we want a CI pipeline?
 * Deploy puppet\_webhook
 * deploy lldpd?
+* check why choria server isn't deployed properly
