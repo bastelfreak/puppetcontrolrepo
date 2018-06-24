@@ -75,12 +75,12 @@ class profiles::puppetserver {
     path => '/etc/hosts',
     line => "${facts['networking']['ip6']} puppet.local # MANAGED BY PUPPET\n",
   }
-  @@file_line{'hostlegacyip':
+  @@file_line{'exporthostlegacyip':
     path => '/etc/hosts',
     line => "${facts['networking']['ip']} puppet.local # MANAGED BY PUPPET\n",
     tag  => 'puppetserver',
   }
-  @@file_line{'hostip':
+  @@file_line{'exporthostip':
     path => '/etc/hosts',
     line => "${facts['networking']['ip6']} puppet.local # MANAGED BY PUPPET\n",
     tag  => 'puppetserver',
