@@ -15,7 +15,10 @@ describe 'profiles::gitlab' do
 
       context 'with all defaults' do
         it { is_expected.to compile.with_all_deps }
-        it { is_expected.to contain_ferm__rule('allow_http_https') } 
+        it { is_expected.to contain_class('ferm') }
+        it { is_expected.to contain_class('gitlab') }
+        it { is_expected.to contain_class('profiles::firewall_http') }
+        it { is_expected.to contain_class('profiles::firewall_https') }
       end
     end
   end
