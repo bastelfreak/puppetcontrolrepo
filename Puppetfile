@@ -48,6 +48,9 @@ mod 'saz-memcached', '3.1.0'
 mod 'KyleAnderson-consul',
   :git => 'https://github.com/solarkennedy/puppet-consul.git',
   :commit => 'c579a049c2cf38364602940e7030e92eaf8814e0'
+mod 'saz/ssh',
+  :git => 'https://github.com/bastelfreak/puppet-ssh.git',
+  :branch => 'puppet4'
 
 # all the choria modules
 mod 'choria-mcollective_util_actionpolicy', '3.0.0'

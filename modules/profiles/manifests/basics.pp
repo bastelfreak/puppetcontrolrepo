@@ -51,4 +51,13 @@ class profiles::basics {
   if ($facts['fqdn'] != 'puppet.local') {
     File_line <<| tag == 'puppetserver' |>>
   }
+
+  # only allow ssh access via key
+  class{'ssh':
+    server_options       => {
+      'PasswordAuthentication' => 'no',
+      'PermitRootLogin'        => 'yes',
+    },
+  }
+
 }
