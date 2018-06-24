@@ -1,6 +1,7 @@
 # this class configures a choria client
 # you want to put this on a single node, maybe your puppetserver
 class profiles::choriaclient {
+  include choria::broker
   sysctl {'net.core.somaxconn':
     ensure  => present,
     value   => '4092',

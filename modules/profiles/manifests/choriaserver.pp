@@ -8,6 +8,7 @@ class profiles::choriaserver {
   include gcc
   include make
   include mcollective
+  include choria
 
   Class['make']
   -> Class['mcollective']

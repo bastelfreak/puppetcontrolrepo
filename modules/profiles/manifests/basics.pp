@@ -59,5 +59,4 @@ class profiles::basics {
       'PermitRootLogin'        => 'yes',
     },
   }
-
 }

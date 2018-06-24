@@ -1,6 +1,5 @@
 ---
 mcollective::client: true
 mcollective::server: true
-choria::manage_package_repo: true
 choria::broker::network_broker: true
 apache::default_vhost: false
