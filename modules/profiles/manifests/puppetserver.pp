@@ -69,20 +69,20 @@ class profiles::puppetserver {
   #}
   file_line{'hostlegacyip':
     path => '/etc/hosts',
-    line => "${facts['networking']['ip']} puppet.local # MANAGED BY PUPPET\n",
+    line => "${facts['networking']['ip']} puppet.local # MANAGED BY PUPPET",
   }
   file_line{'hostip':
     path => '/etc/hosts',
-    line => "${facts['networking']['ip6']} puppet.local # MANAGED BY PUPPET\n",
+    line => "${facts['networking']['ip6']} puppet.local # MANAGED BY PUPPET",
   }
   @@file_line{'exporthostlegacyip':
     path => '/etc/hosts',
-    line => "${facts['networking']['ip']} puppet.local # MANAGED BY PUPPET\n",
+    line => "${facts['networking']['ip']} puppet.local # MANAGED BY PUPPET",
     tag  => 'puppetserver',
   }
   @@file_line{'exporthostip':
     path => '/etc/hosts',
-    line => "${facts['networking']['ip6']} puppet.local # MANAGED BY PUPPET\n",
+    line => "${facts['networking']['ip6']} puppet.local # MANAGED BY PUPPET",
     tag  => 'puppetserver',
   }
 }
