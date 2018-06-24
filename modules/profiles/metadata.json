@@ -45,10 +45,6 @@
       "version_requirement": ">= 1.2.0 < 2.0.0"
     },
     {
-      "name": "puppet/network",
-      "version_requirement": ">= 0.8.0 < 2.0.0"
-    },
-    {
       "name": "puppet/nginx",
       "version_requirement": ">= 0.12.0 < 2.0.0"
     },
