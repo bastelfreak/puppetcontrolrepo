@@ -1,5 +1,4 @@
 mod 'camptocamp-systemd', '1.1.1'
-mod 'puppet-r10k', '6.5.1'
 mod 'puppetlabs-concat', '4.2.1'
 mod 'puppetlabs-vcsrepo', '2.3.0'
 mod 'puppetlabs-stdlib', '4.25.1'
