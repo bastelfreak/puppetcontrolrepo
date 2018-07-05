@@ -14,5 +14,9 @@ RSpec.configure do |c|
     if host[:platform] =~ %r{el-7-x86_64} && host[:hypervisor] =~ %r{docker}
       on(host, "sed -i '/nodocs/d' /etc/yum.conf")
     end
+
+    # setup hiera data
+    write_hiera_config_on(host, ['%<::osfamily>s'])
+    copy_hiera_data_to(host, './spec/acceptance/hieradata/')
   end
 end
