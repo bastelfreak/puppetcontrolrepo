@@ -40,7 +40,7 @@ mod 'puppet-prometheus', '6.0.5'
 mod 'puppet-grafana', '4.4.0'
 mod 'puppet-gitlab', '2.1.0'
 mod 'puppetlabs-powershell', '2.1.5'
-mod 'puppet-r10k', '6.5.1'
+mod 'puppet-r10k', '6.6.0'
 mod 'saz-memcached', '3.1.0'
 #mod 'KyleAnderson-consul', '3.3.0'
 mod 'KyleAnderson-consul',
