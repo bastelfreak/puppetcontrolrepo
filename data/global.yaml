@@ -39,7 +39,7 @@ mcollective::plugin_classes:
   - mcollective_agent_process
   - mcollective_agent_nettest
 choria::manage_package_repo: true
-choria::loglevel: info
+choria::log_level: info
 choria::server: true
 choria::manage_package_repo: true
 mcollective_choria::config:
