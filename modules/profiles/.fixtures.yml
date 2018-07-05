@@ -32,6 +32,8 @@ fixtures:
     consul: "https://github.com/solarkennedy/puppet-consul.git"
     choria: "https://github.com/choria-io/puppet-choria.git"
     git: "https://github.com/puppetlabs/puppetlabs-git.git"
+    archive: "https://github.com/voxpupuli/puppet-archive.git"
+    systemd: "https://github.com/camptocamp/puppet-systemd.git"
     ssh:
       repo: "https://github.com/bastelfreak/puppet-ssh.git"
       branch: "puppet4"
@@ -42,5 +44,12 @@ fixtures:
     mcollective_agent_service: "choria/mcollective_agent_service"
     mcollective_agent_filemgr: "choria/mcollective_agent_filemgr"
     mcollective_util_actionpolicy: "choria/mcollective_util_actionpolicy"
+    mcollective_agent_puppetca: "choria/mcollective_agent_puppetca"
+    mcollective_agent_nrpe: "choria/mcollective_agent_nrpe"
+    mcollective_agent_iptables: "choria/mcollective_agent_iptables"
+    mcollective_agent_shell: "choria/mcollective_agent_shell"
+    mcollective_data_sysctl: "choria/mcollective_data_sysctl"
+    mcollective_agent_process: "choria/mcollective_agent_process"
+    mcollective_agent_nettest: "choria/mcollective_agent_nettest"
   symlinks:
     profiles: "#{source_dir}"
