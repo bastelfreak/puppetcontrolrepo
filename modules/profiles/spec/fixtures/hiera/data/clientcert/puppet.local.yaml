@@ -1,0 +1,49 @@
+---
+mcollective_choria::config:
+  use_srv_records: false
+  puppetserver_host: 'puppet.local'
+  puppetserver_port: 8140
+  puppetca_host: 'puppet.local'
+  puppetca_port: 8140
+  puppetdb_host: 'puppet.local'
+  puppetdb_port: 8081
+  middleware_hosts: 'puppet.local:4222'
+mcollective::site_policies:
+- action: "allow"
+  callers: "choria=mco.mcollective"
+  actions: "*"
+  facts: "*"
+  classes: "*"
+mcollective_agent_process::gem_dependencies:
+  sys-proctable: 1.2.0
+mcollective_agent_nettest::gem_dependencies:
+  net-ping: 2.0.2
+mcollective::client: true
+mcollective::server: true
+choria::broker::network_broker: true
+mcollective::server_config:
+  rpcauditprovider: 'choria'
+  plugin.rpcaudit.logfile: '/var/log/puppetlabs/choria-audit.log'
+mcollective::plugin_classes:
+  - mcollective_agent_puppetca
+  - mcollective_agent_puppet
+  - mcollective_agent_nrpe
+  - mcollective_agent_service
+  - mcollective_agent_package
+  - mcollective_util_actionpolicy
+  - mcollective_agent_filemgr
+  - mcollective_agent_iptables
+  - mcollective_agent_shell
+  - mcollective_data_sysctl
+  - mcollective_agent_process
+  - mcollective_agent_nettest
+choria::log_level: info
+choria::server: true
+mcollective_choria::config:
+  security.serializer: "json"
+mcollective::service_ensure: stopped
+mcollective::service_enable: false
+ferm::manage_service: true
+ferm::manage_configfile: true
+nginx::purge_passenger_repo: false
+apache::default_vhost: false
