@@ -17,6 +17,8 @@ describe 'profiles::choriaserver' do
         it { is_expected.to contain_class('gcc') }
         it { is_expected.to contain_class('make') }
         it { is_expected.to contain_class('mcollective') }
+        it { is_expected.to contain_class('choria') }
+        it { is_expected.to contain_service('choria-server') }
       end
     end
   end
