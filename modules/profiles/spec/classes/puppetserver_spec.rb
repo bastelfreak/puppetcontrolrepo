@@ -23,6 +23,8 @@ describe 'profiles::puppetserver' do
         it { is_expected.to contain_ferm__rule('allow_puppet') }
         it { is_expected.to contain_nginx__resource__server('127.0.0.1') }
         it { is_expected.to contain_nginx__resource__location('nginx_status') }
+        it { is_expected.to contain_file_line('hostip') }
+        it { is_expected.to contain_file_line('hostlegacyip') }
       end
     end
   end
