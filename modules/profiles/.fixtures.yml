@@ -30,6 +30,7 @@ fixtures:
     r10k: "https://github.com/voxpupuli/puppet-r10k.git"
     memcached: "https://github.com/saz/puppet-memcached.git"
     consul: "https://github.com/solarkennedy/puppet-consul.git"
+    choria: "https://github.com/choria-io/puppet-choria.git"
     ssh:
       repo: "https://github.com/bastelfreak/puppet-ssh.git"
       branch: "puppet4"
