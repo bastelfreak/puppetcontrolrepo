@@ -16,6 +16,8 @@ describe 'profiles::choriaclient' do
         it { is_expected.to compile.with_all_deps }
         it { is_expected.to contain_sysctl('net.core.somaxconn') }
         it { is_expected.to contain_sysctl('net.ipv4.tcp_max_syn_backlog') }
+        it { is_expected.to contain_class('choria::broker') }
+        it { is_expected.to contain_service('choria-broker') }
       end
     end
   end
