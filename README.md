@@ -119,7 +119,7 @@ During the work on this project we run into several issues. They are documented 
 * deploy lldpd?
 * check why choria server isn't deployed properly
 
-##
+## Further documentation
 
 This is a collection of good links that you should check out if you are
 interested in more details and background information about the used tools
