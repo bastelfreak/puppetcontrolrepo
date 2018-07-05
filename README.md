@@ -107,7 +107,9 @@ During the work on this project we run into several issues. They are documented 
 * https://tickets.puppetlabs.com/browse/MODULES-4266
 * https://github.com/camptocamp/puppetfile-updater/issues/7
 * https://github.com/saz/puppet-ssh/pull/206
+* https://github.com/saz/puppet-ssh/issues/250
 * https://github.com/choria-io/puppet-choria/pull/72
+* https://github.com/voxpupuli/puppet-r10k/pull/438
 
 ## ToDo
 
