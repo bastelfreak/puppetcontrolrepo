@@ -89,76 +89,25 @@
   ],
   "operatingsystem_support": [
     {
-      "operatingsystem": "RedHat",
-      "operatingsystemrelease": [
-        "6.0",
-        "7.0"
-      ]
-    },
-    {
-      "operatingsystem": "Amazon",
-      "operatingsystemrelease": [
-        "6.0",
-        "7.0"
-      ]
-    },
-    {
-      "operatingsystem": "OracleLinux",
-      "operatingsystemrelease": [
-        "6.0",
-        "7.0"
-      ]
-    },
-    {
-      "operatingsystem": "Scientific",
-      "operatingsystemrelease": [
-        "6.0",
-        "7.0"
-      ]
-    },
-    {
       "operatingsystem": "CentOS",
       "operatingsystemrelease": [
-        "6.0",
-        "7.0"
-      ]
-    },
-    {
-      "operatingsystem": "CloudLinux",
-      "operatingsystemrelease": [
-        "6.0",
-        "7.0"
-      ]
-    },
-    {
-      "operatingsystem": "XenServer",
-      "operatingsystemrelease": [
-        "6.0"
+        "6",
+        "7"
       ]
     },
     {
       "operatingsystem": "Ubuntu",
       "operatingsystemrelease": [
         "14.04",
-        "16.04"
+        "16.04",
+        "18.04"
       ]
     },
     {
       "operatingsystem": "Debian",
       "operatingsystemrelease": [
-        "8.0"
-      ]
-    },
-    {
-      "operatingsystem": "PSBM",
-      "operatingsystemrelease": [
-        "5.0"
-      ]
-    },
-    {
-      "operatingsystem": "PCS",
-      "operatingsystemrelease": [
-        "6.0"
+        "8",
+        "9"
       ]
     },
     {
