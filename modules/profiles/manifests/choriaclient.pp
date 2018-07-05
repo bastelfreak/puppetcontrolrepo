@@ -18,7 +18,7 @@ class profiles::choriaclient {
 
   # also deploy a broker
   class{'choria::broker':
-    network_broker => true
+    network_broker => true,
   }
 
   # broker needs to be accessible on port 4222 from all choria-server instances

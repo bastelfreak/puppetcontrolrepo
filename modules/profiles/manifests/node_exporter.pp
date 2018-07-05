@@ -23,14 +23,15 @@ class profiles::node_exporter {
       $nginx = 'www-data'
       $ssl_protocols = 'TLSv1.2 TLSv1.3'
     }
+    default: {}
   }
   include nginx
   file{"/etc/nginx/node_exporter_key_${trusted['certname']}.pem":
-    ensure  => 'file',
-    owner   => $nginx,
-    group   => $nginx,
-    mode    => '0400',
-    source  => "/etc/puppetlabs/puppet/ssl/private_keys/${trusted['certname']}.pem",
+    ensure => 'file',
+    owner  => $nginx,
+    group  => $nginx,
+    mode   => '0400',
+    source => "/etc/puppetlabs/puppet/ssl/private_keys/${trusted['certname']}.pem",
     notify => Nginx::Resource::Server['node_exporter'],
   }
   file{"/etc/nginx/node_exporter_cert_${trusted['certname']}.pem":
