@@ -9,6 +9,7 @@ new [Hetzner Online](https://www.hetzner.de/cloud) cloud instances.
 * [Provision script](#provision-script)
 * [Constraints](#constraints)
 * [Related issues and pull requests](#related-issues-and-pull-requests)
+* [Further documentation](#further-documentation)
 
 ---
 
@@ -106,6 +107,12 @@ During the work on this project we run into several issues. They are documented 
 * https://tickets.puppetlabs.com/browse/MODULES-4266
 * https://github.com/camptocamp/puppetfile-updater/issues/7
 * https://github.com/saz/puppet-ssh/pull/206
+* https://github.com/saz/puppet-ssh/issues/250
+* https://github.com/choria-io/puppet-choria/pull/72
+* https://github.com/choria-io/puppet-choria/pull/74
+* https://github.com/voxpupuli/puppet-r10k/pull/438
+* https://github.com/voxpupuli/puppet-r10k/pull/439
+* https://github.com/voxpupuli/puppet-r10k/pull/440
 
 ## ToDo
 
@@ -116,3 +123,12 @@ During the work on this project we run into several issues. They are documented 
 * Deploy puppet\_webhook
 * deploy lldpd?
 * check why choria server isn't deployed properly
+
+## Further documentation
+
+This is a collection of good links that you should check out if you are
+interested in more details and background information about the used tools
+within this stack
+
+* [choria.io documentation](https://choria.io/docs)
+* [Using hiera in rspec-puppet](https://github.com/rodjek/rspec-puppet#enabling-hiera-lookups)

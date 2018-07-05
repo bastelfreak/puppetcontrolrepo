@@ -1,6 +1,4 @@
 ---
-selinux::mode: 'enforcing'
-selinux::type: 'targeted'
 mcollective_choria::config:
   use_srv_records: false
   puppetserver_host: 'puppet.local'
@@ -20,8 +18,9 @@ mcollective_agent_process::gem_dependencies:
   sys-proctable: 1.2.0
 mcollective_agent_nettest::gem_dependencies:
   net-ping: 2.0.2
-mcollective::client: false
+mcollective::client: true
 mcollective::server: true
+choria::broker::network_broker: true
 mcollective::server_config:
   rpcauditprovider: 'choria'
   plugin.rpcaudit.logfile: '/var/log/puppetlabs/choria-audit.log'
@@ -38,10 +37,8 @@ mcollective::plugin_classes:
   - mcollective_data_sysctl
   - mcollective_agent_process
   - mcollective_agent_nettest
-choria::manage_package_repo: true
 choria::log_level: info
 choria::server: true
-choria::manage_package_repo: true
 mcollective_choria::config:
   security.serializer: "json"
 mcollective::service_ensure: stopped
@@ -49,3 +46,4 @@ mcollective::service_enable: false
 ferm::manage_service: true
 ferm::manage_configfile: true
 nginx::purge_passenger_repo: false
+apache::default_vhost: false

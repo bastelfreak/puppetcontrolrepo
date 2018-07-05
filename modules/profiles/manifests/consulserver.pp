@@ -15,6 +15,6 @@ class profiles::consulserver {
       'disable_update_check' => true,
       'enable_script_checks' => true,
       'ui'                   => true,
-    }
+    },
   }
 }

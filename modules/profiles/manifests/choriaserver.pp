@@ -8,10 +8,11 @@ class profiles::choriaserver {
   include gcc
   include make
   include mcollective
+  include choria
 
-  Class['make']
-  -> Class['mcollective']
+  # mcollective pulls in gems that require make
+  Class['make'] -> Class['mcollective']
 
-  Class['gcc']
-  -> Class['mcollective']
+  # mcollective pulls in gems that require gcc
+  Class['gcc'] -> Class['mcollective']
 }

@@ -1,0 +1,14 @@
+---
+version: 5
+defaults:
+  datadir: "data"
+  data_hash: "yaml_data"
+hierarchy:
+  - name: "Per-node data (yaml version)"
+    path: "clientcert/%{trusted.certname}.yaml"
+  - name: "OS specific settings"
+    path: "os/%{facts.os.name}.yaml"
+  - name: "one file to rule them all"
+    path: "global.yaml"
+  - name: 'define merge strategy'
+    path: 'config.yaml'
