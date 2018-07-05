@@ -20,4 +20,14 @@ class profiles::choriaclient {
   class{'choria::broker':
     network_broker => true
   }
+
+  # broker needs to be accessible on port 4222 from all choria-server instances
+  # 4223 needs to be accassible from each broker to each other broker, we only run one
+  include ferm
+  ferm::rule{'allow_choria_broker_access':
+    chain  => 'INPUT',
+    policy => 'ACCEPT',
+    proto  => 'tcp',
+    dport  => '4222',
+  }
 }
