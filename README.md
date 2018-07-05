@@ -9,6 +9,7 @@ new [Hetzner Online](https://www.hetzner.de/cloud) cloud instances.
 * [Provision script](#provision-script)
 * [Constraints](#constraints)
 * [Related issues and pull requests](#related-issues-and-pull-requests)
+* [Further documentation](#further-documentation)
 
 ---
 
@@ -116,3 +117,11 @@ During the work on this project we run into several issues. They are documented 
 * Deploy puppet\_webhook
 * deploy lldpd?
 * check why choria server isn't deployed properly
+
+##
+
+This is a collection of good links that you should check out if you are
+interested in more details and background information about the used tools
+within this stack
+
+* [choria.io documentation](https://choria.io/docs)
