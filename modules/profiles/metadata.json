@@ -66,7 +66,7 @@
     },
     {
       "name": "saz/ssh",
-      "version_requirement": ">= 3.0.1 < 4.0.0"
+      "version_requirement": ">= 3.0.1 < 5.0.0"
     }
   ],
   "source": "https://github.com/voxpupuli/puppet-zabbix.git",
