@@ -49,5 +49,3 @@ fixtures:
     mcollective_data_sysctl: "choria/mcollective_data_sysctl"
     mcollective_agent_process: "choria/mcollective_agent_process"
     mcollective_agent_nettest: "choria/mcollective_agent_nettest"
-  symlinks:
-    profiles: "#{source_dir}"
