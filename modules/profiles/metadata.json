@@ -6,7 +6,7 @@
   "dependencies": [
     {
       "name": "herculesteam/augeasproviders_sysctl",
-      "version_requirement": ">= 2.2.0 < 3.0.0"
+      "version_requirement": ">= 2.2.1 < 3.0.0"
     },
     {
       "name": "puppetlabs/gcc",
@@ -17,8 +17,8 @@
       "version_requirement": ">= 2.1.0 < 3.0.0"
     },
     {
-      "name": "choria/mcollective",
-      "version_requirement": ">= 0.6.0 < 2.0.0"
+      "name": "choria/choria",
+      "version_requirement": ">= 0.11.0 < 2.0.0"
     },
     {
       "name": "theforeman/foreman",

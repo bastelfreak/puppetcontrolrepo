@@ -6,6 +6,8 @@ new [Hetzner Online](https://www.hetzner.de/cloud) cloud instances.
 * [Setup](#setup)
     * [Basics Profile](#basics-profile)
     * [GitLab Profile](#gitlab-profile)
+    * [Foreman Profile](#foreman-profile)
+    * [Consul Server Profile](#consulserver-profile)
 * [Provision script](#provision-script)
 * [Constraints](#constraints)
 * [Related issues and pull requests](#related-issues-and-pull-requests)
@@ -54,6 +56,11 @@ awk '{print $2; exit}' /opt/puppetlabs/puppet/cache/foreman_cache_data/admin_pas
 
 Just because we can: We deploy a [Memcached](https://memcached.org/) instance
 as a cache for our Foreman.
+
+### `consulserver` Profile
+
+Consul provides DNS based loadbalancing for our Puppetserver and also acts as
+service discovery for Prometheus.
 
 ## Provision script
 
@@ -110,9 +117,12 @@ During the work on this project we run into several issues. They are documented 
 * https://github.com/saz/puppet-ssh/issues/250
 * https://github.com/choria-io/puppet-choria/pull/72
 * https://github.com/choria-io/puppet-choria/pull/74
+* https://github.com/choria-io/puppet-choria/pull/95
+* https://github.com/choria-io/puppet-mcollective/pull/198
 * https://github.com/voxpupuli/puppet-r10k/pull/438
 * https://github.com/voxpupuli/puppet-r10k/pull/439
 * https://github.com/voxpupuli/puppet-r10k/pull/440
+* https://community.theforeman.org/t/1-20-planning/10432
 
 ## ToDo
 

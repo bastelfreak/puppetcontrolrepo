@@ -5,6 +5,8 @@ class profiles::choriaserver {
       before => Class['mcollective'],
     }
   }
+  # we only add choria/choria to metadata.json
+  # it pulls in choria/mcollective and choria/mcollective_choria
   include gcc
   include make
   include mcollective
