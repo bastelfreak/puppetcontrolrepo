@@ -110,9 +110,12 @@ During the work on this project we run into several issues. They are documented 
 * https://github.com/saz/puppet-ssh/issues/250
 * https://github.com/choria-io/puppet-choria/pull/72
 * https://github.com/choria-io/puppet-choria/pull/74
+* https://github.com/choria-io/puppet-choria/pull/95
+* https://github.com/choria-io/puppet-mcollective/pull/198
 * https://github.com/voxpupuli/puppet-r10k/pull/438
 * https://github.com/voxpupuli/puppet-r10k/pull/439
 * https://github.com/voxpupuli/puppet-r10k/pull/440
+* https://community.theforeman.org/t/1-20-planning/10432
 
 ## ToDo
 
