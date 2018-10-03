@@ -1,5 +1,8 @@
 # this is supposed to be used once, to build a "single node cluster"
 class profiles::consulserver {
+  if $facts['os']['family'] == 'RedHat' {
+    ensure_packages(['unzip'])
+  }
   class{'consul':
     version        => '1.1.0',
     pretty_config  => true,
@@ -16,5 +19,6 @@ class profiles::consulserver {
       'enable_script_checks' => true,
       'ui'                   => true,
     },
+    require        => Package['unzip'],
   }
 }
