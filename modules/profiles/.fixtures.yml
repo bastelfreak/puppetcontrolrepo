@@ -34,9 +34,7 @@ fixtures:
     git: "https://github.com/puppetlabs/puppetlabs-git.git"
     archive: "https://github.com/voxpupuli/puppet-archive.git"
     systemd: "https://github.com/camptocamp/puppet-systemd.git"
-    ssh:
-      repo: "https://github.com/bastelfreak/puppet-ssh.git"
-      branch: "puppet4"
+    ssh: "https://github.com/saz/puppet-ssh.git"
   forge_modules:
     mcollective_choria: "choria/mcollective_choria"
     mcollective_agent_puppet: "choria/mcollective_agent_puppet"
@@ -51,5 +49,3 @@ fixtures:
     mcollective_data_sysctl: "choria/mcollective_data_sysctl"
     mcollective_agent_process: "choria/mcollective_agent_process"
     mcollective_agent_nettest: "choria/mcollective_agent_nettest"
-  symlinks:
-    profiles: "#{source_dir}"
