@@ -123,6 +123,9 @@ During the work on this project we run into several issues. They are documented 
 * https://github.com/voxpupuli/puppet-r10k/pull/439
 * https://github.com/voxpupuli/puppet-r10k/pull/440
 * https://community.theforeman.org/t/1-20-planning/10432
+* https://github.com/saz/puppet-ssh/pull/256
+* https://github.com/saz/puppet-ssh/pull/257
+* https://github.com/saz/puppet-memcached/pull/101
 
 ## ToDo
 
@@ -142,3 +145,12 @@ within this stack
 
 * [choria.io documentation](https://choria.io/docs)
 * [Using hiera in rspec-puppet](https://github.com/rodjek/rspec-puppet#enabling-hiera-lookups)
+
+## Acceptance tests
+
+The goal is to have acceptance tests for all profiles. The following are known to work:
+
+```sh
+PUPPET_INSTALL_TYPE=agent BEAKER_IS_PE=no BEAKER_PUPPET_COLLECTION=puppet5 BEAKER_debug=true BEAKER_setfile=ubuntu1804-64{hypervisor=docker\,hostname=puppet.local} BEAKER_destroy=yes bundle exec rspec spec/acceptance/node_exporter_spec.rb
+PUPPET_INSTALL_TYPE=agent BEAKER_IS_PE=no BEAKER_PUPPET_COLLECTION=puppet5 BEAKER_debug=true BEAKER_setfile=centos7-64{hypervisor=docker\,hostname=puppet.local} BEAKER_destroy=yes bundle exec rspec spec/acceptance/consulserver_spec.rb
+```
