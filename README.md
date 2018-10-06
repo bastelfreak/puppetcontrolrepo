@@ -123,6 +123,8 @@ During the work on this project we run into several issues. They are documented 
 * https://github.com/voxpupuli/puppet-r10k/pull/439
 * https://github.com/voxpupuli/puppet-r10k/pull/440
 * https://community.theforeman.org/t/1-20-planning/10432
+* https://github.com/saz/puppet-ssh/pull/256
+* https://github.com/saz/puppet-ssh/pull/257
 
 ## ToDo
 
