@@ -22,5 +22,13 @@ describe 'profiles::basics class' do
       it { is_expected.to be_running }
       it { is_expected.to be_enabled }
     end
+
+    describe package('ferm') do
+      it { is_expected.to be_installed }
+    end
+    describe service('ferm') do
+      it { is_expected.to be_running }
+      it { is_expected.to be_enabled }
+    end
   end
 end
