@@ -145,6 +145,8 @@ within this stack
 
 * [choria.io documentation](https://choria.io/docs)
 * [Using hiera in rspec-puppet](https://github.com/rodjek/rspec-puppet#enabling-hiera-lookups)
+* (Setup Puppet within beaker environments)[https://github.com/puppetlabs/beaker-puppet_install_helper#beaker-puppet_install_helper]
+* (Setup modules within beaker environments)[https://github.com/puppetlabs/beaker-module_install_helper#beaker-module_install_helper]
 
 ## Acceptance tests
 
