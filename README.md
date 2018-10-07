@@ -126,6 +126,7 @@ During the work on this project we run into several issues. They are documented 
 * https://github.com/saz/puppet-ssh/pull/256
 * https://github.com/saz/puppet-ssh/pull/257
 * https://github.com/saz/puppet-memcached/pull/101
+* https://tickets.puppetlabs.com/browse/BKR-1493
 
 ## ToDo
 
