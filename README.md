@@ -62,7 +62,27 @@ as a cache for our Foreman.
 Consul provides DNS based loadbalancing for our Puppetserver and also acts as
 service discovery for Prometheus.
 
-## Provision script
+## Provisioning
+
+As mentioned in the introduction, the goal of this repo is to setup a working
+Puppet 6 stack. All profiles should have individual acceptance tests, but this
+also has to work in a reald world scenario. I chose Hetzner as a cloud provider
+because their setup is cheap and works and has a proper API. The instructions
+in this README.md will create a single box with everything you can dream off,
+but the profiles are designed in a way that they are flexible. You can rip out
+single parts like PuppetDB or the PostgreSQL database to single servers. The
+README.md might get extended with that data in the future.
+
+### Setup the instance
+
+Basically two setups, upload an ssh key and afterwards create a server:
+
+```bash
+hcloud ssh-key create --public-key-from-file=${HOME}/.ssh/id_ed25519.pub --name puppetkey
+hcloud server create --ssh-key puppetkey --image centos-7 --type=cx21 --name puppet.local
+```
+
+### Provision script
 
 First of we need to fix selinux:
 
