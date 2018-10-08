@@ -84,6 +84,11 @@ hcloud ssh-key create --public-key-from-file=${HOME}/.ssh/id_ed25519.pub --name 
 hcloud server create --ssh-key puppetkey --image centos-7 --type=cx21 --name puppet.local
 ```
 
+You can delete unneeded instances with:
+```bash
+hcloud server delete puppet.local
+```
+
 ### Provision script
 
 First of we need to fix selinux:
