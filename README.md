@@ -111,10 +111,12 @@ puppet agent -t --server puppet.local
 
 ## Constraints
 
-The FQDN of the puppserver node should be `puppet.local`. The certificate is
+* The FQDN of the puppserver node should be `puppet.local`. The certificate is
 valid for `puppet` and `puppet.local`. We create an entry in `/etc/hosts` for
 each client, so it can reach the server under that FQDN and we don't need to
 deal with DNS.
+* PostgreSQL 10 is [not yet supported](https://tickets.puppetlabs.com/browse/PDB-3857) properly by PuppetDB
+* Many of the component module we depend on don't support/test on Puppet 6 yet
 
 ## Related issues and pull requests
 
@@ -147,6 +149,7 @@ During the work on this project we run into several issues. They are documented 
 * https://github.com/saz/puppet-ssh/pull/257
 * https://github.com/saz/puppet-memcached/pull/101
 * https://tickets.puppetlabs.com/browse/BKR-1493
+* https://tickets.puppetlabs.com/browse/PDB-3857
 
 ## ToDo
 
