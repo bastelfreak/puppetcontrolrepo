@@ -20,8 +20,16 @@ mod 'puppet-nginx', '0.14.0'
 mod 'puppet-archive', '3.2.0'
 mod 'puppet-make', '2.1.1'
 mod 'puppetlabs-apache', '3.4.0'
-mod 'theforeman-foreman', '9.2.0'
-mod 'theforeman-puppet', '9.1.0'
+#mod 'theforeman-foreman', '9.2.0'
+mod 'theforeman-foreman',
+  :git => 'https://github.com/theforeman/puppet-foreman.git',
+  :ref => 'master'
+
+#mod 'theforeman-puppet', '9.1.0'
+mod 'theforeman-puppet',
+  :git => 'https://github.com/theforeman/puppet-puppet.git',
+  :ref => 'master'
+
 mod 'theforeman-foreman_proxy', '8.0.2'
 mod 'puppetlabs-certregen', '0.2.0'
 mod 'gentoo-portage', '2.3.0'
