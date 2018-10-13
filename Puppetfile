@@ -23,14 +23,18 @@ mod 'puppetlabs-apache', '3.4.0'
 #mod 'theforeman-foreman', '9.2.0'
 mod 'theforeman-foreman',
   :git => 'https://github.com/theforeman/puppet-foreman.git',
-  :ref => 'master'
+  :ref => '9f1ba19'
 
 #mod 'theforeman-puppet', '9.1.0'
 mod 'theforeman-puppet',
   :git => 'https://github.com/theforeman/puppet-puppet.git',
-  :ref => 'master'
+  :ref => '262f2af'
 
-mod 'theforeman-foreman_proxy', '8.0.2'
+#mod 'theforeman-foreman_proxy', '8.0.2'
+mod 'theforeman-foreman_proxy',
+  :git => 'https://github.com/theforeman/puppet-foreman_proxy.git',
+  :ref => 'cbf2929'
+
 mod 'puppetlabs-certregen', '0.2.0'
 mod 'gentoo-portage', '2.3.0'
 mod 'puppet-extlib', '3.0.0'
@@ -57,7 +61,7 @@ mod 'KyleAnderson-consul', '4.0.0'
 #  :commit => 'c579a049c2cf38364602940e7030e92eaf8814e0'
 mod 'saz/ssh',
   :git => 'https://github.com/bastelfreak/puppet-ssh.git',
-  :branch => 'deps'
+  :branch => 'deps', :ref => "ba2fb16"
 
 # all the choria modules
 mod 'choria-mcollective_util_actionpolicy', '3.0.0'
