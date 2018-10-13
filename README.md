@@ -158,6 +158,7 @@ During the work on this project we run into several issues. They are documented 
 * https://github.com/saz/puppet-memcached/pull/101
 * https://tickets.puppetlabs.com/browse/BKR-1493
 * https://tickets.puppetlabs.com/browse/PDB-3857
+* https://tickets.puppetlabs.com/browse/MODULES-8089
 
 ## ToDo
 
