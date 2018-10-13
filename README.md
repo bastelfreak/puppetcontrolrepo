@@ -97,6 +97,7 @@ First of we need to fix selinux:
 # /etc/sysconfig/selinux is the wrong file
 sed -i 's/SELINUX=disabled/SELINUX=enforcing/' /etc/selinux/config
 touch /.autorelabel
+sync
 reboot
 ```
 
