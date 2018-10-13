@@ -159,6 +159,7 @@ During the work on this project we run into several issues. They are documented 
 * https://tickets.puppetlabs.com/browse/BKR-1493
 * https://tickets.puppetlabs.com/browse/PDB-3857
 * https://tickets.puppetlabs.com/browse/MODULES-8089
+* https://github.com/camptocamp/puppetfile-updater/pull/17
 
 ## ToDo
 
