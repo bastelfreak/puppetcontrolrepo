@@ -60,8 +60,8 @@ mod 'KyleAnderson-consul', '4.0.0'
 #  :git => 'https://github.com/solarkennedy/puppet-consul.git',
 #  :commit => 'c579a049c2cf38364602940e7030e92eaf8814e0'
 mod 'saz/ssh',
-  :git => 'https://github.com/bastelfreak/puppet-ssh.git',
-  :branch => 'deps', :ref => "ba2fb16"
+  :git => 'https://github.com/saz/puppet-ssh.git',
+  :branch => 'master', :ref => "f0dd3dd"
 
 # all the choria modules
 mod 'choria-mcollective_util_actionpolicy', '3.0.0'
