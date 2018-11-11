@@ -181,6 +181,8 @@ within this stack
 * [Using hiera in rspec-puppet](https://github.com/rodjek/rspec-puppet#enabling-hiera-lookups)
 * [Setup Puppet within beaker environments](https://github.com/puppetlabs/beaker-puppet_install_helper#beaker-puppet_install_helper)
 * [Setup modules within beaker environments](https://github.com/puppetlabs/beaker-module_install_helper#beaker-module_install_helper)
+* [Using the environment cache in Puppetserver](https://puppet.com/docs/puppetserver/6.0/admin-api/v1/environment-cache.html)
+* [Properly purging the env cache](https://www.example42.com/2017/03/27/environment_caching/)
 
 ## Acceptance tests
 
