@@ -2,7 +2,7 @@
 class profiles::consulserver {
   ensure_packages(['unzip'])
   class{'consul':
-    version        => '1.2.3',
+    version        => '1.3.0',
     pretty_config  => true,
     enable_beta_ui => true,
     config_hash    => {
