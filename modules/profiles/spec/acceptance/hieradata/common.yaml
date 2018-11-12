@@ -15,9 +15,9 @@ mcollective::site_policies:
   facts: "*"
   classes: "*"
 mcollective_agent_process::gem_dependencies:
-  sys-proctable: 1.2.0
+  sys-proctable: 1.2.1
 mcollective_agent_nettest::gem_dependencies:
-  net-ping: 2.0.2
+  net-ping: 2.0.5
 mcollective::client: true
 mcollective::server: true
 choria::broker::network_broker: true
@@ -40,7 +40,6 @@ mcollective::plugin_classes:
 choria::manage_package_repo: true
 choria::log_level: info
 choria::server: true
-choria::manage_package_repo: true
 mcollective_choria::config:
   security.serializer: "json"
 mcollective::service_ensure: stopped
@@ -49,3 +48,4 @@ ferm::manage_service: true
 ferm::manage_configfile: true
 nginx::purge_passenger_repo: false
 apache::default_vhost: false
+consul::version: '1.3.0'
