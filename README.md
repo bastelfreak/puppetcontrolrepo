@@ -97,6 +97,7 @@ First of we need to fix selinux:
 # /etc/sysconfig/selinux is the wrong file
 sed -i 's/SELINUX=disabled/SELINUX=enforcing/' /etc/selinux/config
 touch /.autorelabel
+sync
 reboot
 ```
 
@@ -132,6 +133,7 @@ During the work on this project we run into several issues. They are documented 
 * https://github.com/puppetlabs/puppetlabs-puppetdb/pull/251
 * https://github.com/theforeman/puppet-puppet/pull/600
 * https://github.com/theforeman/puppet-foreman/issues/649
+* https://github.com/theforeman/puppet-puppet/pull/647
 * https://github.com/voxpupuli/puppet-make/pull/29
 * https://github.com/choria-io/mcollective-choria/pull/514
 * https://github.com/choria-io/puppet-mcollective/pull/184
@@ -157,6 +159,8 @@ During the work on this project we run into several issues. They are documented 
 * https://github.com/saz/puppet-memcached/pull/101
 * https://tickets.puppetlabs.com/browse/BKR-1493
 * https://tickets.puppetlabs.com/browse/PDB-3857
+* https://tickets.puppetlabs.com/browse/MODULES-8089
+* https://github.com/camptocamp/puppetfile-updater/pull/17
 
 ## ToDo
 
@@ -176,8 +180,10 @@ within this stack
 
 * [choria.io documentation](https://choria.io/docs)
 * [Using hiera in rspec-puppet](https://github.com/rodjek/rspec-puppet#enabling-hiera-lookups)
-* (Setup Puppet within beaker environments)[https://github.com/puppetlabs/beaker-puppet_install_helper#beaker-puppet_install_helper]
-* (Setup modules within beaker environments)[https://github.com/puppetlabs/beaker-module_install_helper#beaker-module_install_helper]
+* [Setup Puppet within beaker environments](https://github.com/puppetlabs/beaker-puppet_install_helper#beaker-puppet_install_helper)
+* [Setup modules within beaker environments](https://github.com/puppetlabs/beaker-module_install_helper#beaker-module_install_helper)
+* [Using the environment cache in Puppetserver](https://puppet.com/docs/puppetserver/6.0/admin-api/v1/environment-cache.html)
+* [Properly purging the env cache](https://www.example42.com/2017/03/27/environment_caching/)
 
 ## Acceptance tests
 

@@ -29,6 +29,6 @@ RSpec.configure do |c|
 
     # setup hiera data
     write_hiera_config_on(host, ['%<::osfamily>s'])
-    copy_hiera_data_to(host, './spec/acceptance/hieradata/')
+    copy_hiera_data_to(host, './spec/acceptance/hieradata/common.yaml')
   end
 end
