@@ -66,7 +66,7 @@
     },
     {
       "name": "KyleAnderson/consul",
-      "version_requirement": ">= 4.0.0 < 5.0.0"
+      "version_requirement": ">= 4.0.0 < 6.0.0"
     },
     {
       "name": "puppetlabs/stdlib",
