@@ -192,4 +192,5 @@ The goal is to have acceptance tests for all profiles. The following are known t
 ```sh
 PUPPET_INSTALL_TYPE=agent BEAKER_IS_PE=no BEAKER_PUPPET_COLLECTION=puppet5 BEAKER_debug=true BEAKER_setfile=ubuntu1804-64{hypervisor=docker\,hostname=puppet.local} BEAKER_destroy=yes bundle exec rspec spec/acceptance/node_exporter_spec.rb
 PUPPET_INSTALL_TYPE=agent BEAKER_IS_PE=no BEAKER_PUPPET_COLLECTION=puppet5 BEAKER_debug=true BEAKER_setfile=centos7-64{hypervisor=docker\,hostname=puppet.local} BEAKER_destroy=yes bundle exec rspec spec/acceptance/consulserver_spec.rb
+PUPPET_INSTALL_TYPE=agent BEAKER_IS_PE=no BEAKER_PUPPET_COLLECTION=puppet5 BEAKER_debug=true BEAKER_setfile=centos7-64{hypervisor=docker\,hostname=puppet.local} BEAKER_destroy=yes bundle exec rspec spec/acceptance/choriaclient_spec.rb
 ```
