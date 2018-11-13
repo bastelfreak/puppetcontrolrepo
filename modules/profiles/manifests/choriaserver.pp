@@ -7,14 +7,9 @@ class profiles::choriaserver {
   }
   # we only add choria/choria to metadata.json
   # it pulls in choria/mcollective and choria/mcollective_choria
-  include gcc
-  include make
+  # mcollective pulls in gems that require make
+  # mcollective pulls in gems that require gcc
+  ensure_packages(['gcc', 'make'], { before => Class['mcollective']})
   include mcollective
   include choria
-
-  # mcollective pulls in gems that require make
-  Class['make'] -> Class['mcollective']
-
-  # mcollective pulls in gems that require gcc
-  Class['gcc'] -> Class['mcollective']
 }
