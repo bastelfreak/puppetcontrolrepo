@@ -195,6 +195,9 @@ PUPPET_INSTALL_TYPE=agent BEAKER_IS_PE=no BEAKER_PUPPET_COLLECTION=puppet5 BEAKE
 PUPPET_INSTALL_TYPE=agent BEAKER_IS_PE=no BEAKER_PUPPET_COLLECTION=puppet5 BEAKER_debug=true BEAKER_setfile=centos7-64{hypervisor=docker\,hostname=puppet.local} BEAKER_destroy=yes bundle exec rspec spec/acceptance/consulserver_spec.rb
 
 PUPPET_INSTALL_TYPE=agent BEAKER_IS_PE=no BEAKER_PUPPET_COLLECTION=puppet5 BEAKER_debug=true BEAKER_setfile=centos7-64{hypervisor=docker\,hostname=puppet.local} BEAKER_destroy=yes bundle exec rspec spec/acceptance/choriaclient_spec.rb
+PUPPET_INSTALL_TYPE=agent BEAKER_IS_PE=no BEAKER_PUPPET_COLLECTION=puppet5 BEAKER_debug=true BEAKER_setfile=debian9-64{hypervisor=docker\,hostname=puppet.local} BEAKER_destroy=yes bundle exec rspec spec/acceptance/choriaclient_spec.rb
+PUPPET_INSTALL_TYPE=agent BEAKER_IS_PE=no BEAKER_PUPPET_COLLECTION=puppet5 BEAKER_debug=true BEAKER_setfile=ubuntu1604-64{hypervisor=docker\,hostname=puppet.local} BEAKER_destroy=yes bundle exec rspec spec/acceptance/choriaclient_spec.rb
+PUPPET_INSTALL_TYPE=agent BEAKER_IS_PE=no BEAKER_PUPPET_COLLECTION=puppet5 BEAKER_debug=true BEAKER_setfile=ubuntu1804-64{hypervisor=docker\,hostname=puppet.local} BEAKER_destroy=yes bundle exec rspec spec/acceptance/choriaclient_spec.rb
 
 PUPPET_INSTALL_TYPE=agent BEAKER_IS_PE=no BEAKER_PUPPET_COLLECTION=puppet5 BEAKER_debug=true BEAKER_setfile=centos7-64{hypervisor=docker\,hostname=puppet.local} BEAKER_destroy=yes bundle exec rspec spec/acceptance/choriaserver_spec.rb
 PUPPET_INSTALL_TYPE=agent BEAKER_IS_PE=no BEAKER_PUPPET_COLLECTION=puppet5 BEAKER_debug=true BEAKER_setfile=ubuntu1804-64{hypervisor=docker\,hostname=puppet.local} BEAKER_destroy=no bundle exec rspec spec/acceptance/choriaserver_spec.rb

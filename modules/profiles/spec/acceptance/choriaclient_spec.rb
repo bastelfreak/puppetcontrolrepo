@@ -6,8 +6,11 @@ describe 'profiles::choriaclient class' do
   context 'default parameters' do
     # Using puppet_apply as a helper
     it 'works idempotently with no errors' do
+      if fact('os.name') == 'CentOS'
+        apply_manifest('package{"epel-release": ensure => present}', catch_failures: true)
+      end
+
       pp = <<-EOS
-      package{'epel-release': ensure => present}
       include profiles::choriaclient
       EOS
 
