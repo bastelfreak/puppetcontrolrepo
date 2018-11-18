@@ -3,6 +3,7 @@ require 'spec_helper_acceptance'
 
 describe 'profiles::node_exporter class' do
   shell('puppet cert generate puppet.local --dns_alt_names=puppet.local,puppet,puppetdb,puppetdb.local')
+  install_module_from_forge('puppetlabs-apt', '>= 6.1.1 < 7.0.0') if fact('os.family') == 'Debian'
   context 'default parameters' do
     # Using puppet_apply as a helper
     it 'works idempotently with no errors' do
