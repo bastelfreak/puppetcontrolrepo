@@ -14,7 +14,7 @@
     },
     {
       "name": "choria/choria",
-      "version_requirement": ">= 0.11.1 < 2.0.0"
+      "version_requirement": ">= 0.12.0 < 2.0.0"
     },
     {
       "name": "theforeman/foreman",
@@ -105,6 +105,14 @@
       "version_requirement": ">= 1.0.3 < 2.0.0"
     },
     {
+      "name": "choria/mcollective_agent_bolt_tasks",
+      "version_requirement": ">= 0.12.0 < 2.0.0"
+    },
+    {
+      "name": "choria/mcollective_agent_package",
+      "version_requirement": ">= 5.1.0 < 6.0.0"
+    },
+    {
       "name": "choria/mcollective_data_sysctl",
       "version_requirement": ">= 3.0.0 < 4.0.0"
     }
@@ -124,7 +132,7 @@
   "requirements": [
     {
       "name": "puppet",
-      "version_requirement": ">= 4.10.0 < 6.0.0"
+      "version_requirement": ">= 5.5.8 < 7.0.0"
     }
   ],
   "operatingsystem_support": [
