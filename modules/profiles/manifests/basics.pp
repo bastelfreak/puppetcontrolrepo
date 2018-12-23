@@ -40,7 +40,7 @@ class profiles::basics {
 
   # install mandatory packages
   # unzip is needed for the archive resource
-  ensure_packages(['unzip'])
+  ensure_packages(['unzip', 'deltarpm'])
 
   # collect the /etc/hosts entries from our puppetserver
   # Just for the assumption that we've got multiple nodes
