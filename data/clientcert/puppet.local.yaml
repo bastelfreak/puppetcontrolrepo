@@ -5,3 +5,4 @@ choria::broker::network_broker: true
 apache::default_vhost: false
 postgresql::globals::version: '10'
 nginx::confd_purge: true
+foreman::repo: '1.20'
