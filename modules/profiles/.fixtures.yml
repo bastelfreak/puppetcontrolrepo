@@ -2,9 +2,6 @@ fixtures:
   repositories:
     augeasproviders_sysctl: "https://github.com/hercules-team/augeasproviders_sysctl.git"
     augeasproviders_core: "https://github.com/hercules-team/augeasproviders_core.git"
-    gcc:
-      repo: "https://github.com/bastelfreak/puppetlabs-gcc.git"
-      branch: "arch"
     make: "https://github.com/voxpupuli/puppet-make.git"
     mcollective: "https://github.com/choria-io/puppet-mcollective.git"
     stdlib: "https://github.com/puppetlabs/puppetlabs-stdlib.git"
