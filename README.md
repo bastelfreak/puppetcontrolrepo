@@ -112,7 +112,7 @@ puppet module install puppet-r10k
 puppet cert generate puppet.local --dns_alt_names=puppet.local,puppet,puppetdb,puppetdb.local
 puppet apply -e 'include r10k'
 sed -i 's#remote:.*#remote: https://github.com/bastelfreak/puppetcontrolrepo.git#' /etc/puppetlabs/r10k/r10k.yaml
-r10k deploy environment --puppetfile --verbose
+r10k deploy environment production --puppetfile --verbose
 puppet apply -e 'include roles::puppetserver'
 puppet agent -t --server puppet.local
 ```
@@ -219,3 +219,17 @@ PUPPET_INSTALL_TYPE=agent BEAKER_IS_PE=no BEAKER_PUPPET_COLLECTION=puppet5 BEAKE
 
 * node\_exporter profile on Puppet 6 fails because it generates TLS certificates which is currently Puppet 5 specific
 * node\_exporter profiles on Debian 9 fails because of [recent gpg changes](https://github.com/puppetlabs/puppetlabs-apt/pull/822) that are not compatible to puppetlabs/apt 6.1.1
+
+## Docker
+
+You can also deploy the whole stack with docker. First you need to build the image:
+
+```
+docker build --tag puppetfoo:0.3.0 .
+```
+
+Then you can run it:
+
+```
+docker run -it --hostname puppet.local puppetfoo:0.3.0
+```
